@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9177CB62-6F27-4B9E-9034-5CE62CBE78EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>INF205_QLKH_PS03423.My.MyApplication</StartupObject>
+    <RootNamespace>INF205_QLKH_PS03423</RootNamespace>
+    <AssemblyName>INF205_QLKH_PS03423</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>INF205_QLKH_PS03423.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>INF205_QLKH_PS03423.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapNhat.Designer.vb">
+      <DependentUpon>CapNhat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapNhatKH.Designer.vb">
+      <DependentUpon>CapNhatKH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CapNhatKH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.Designer.vb">
+      <DependentUpon>DangKy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong.Designer.vb">
+      <DependentUpon>HeThong.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertKH.Designer.vb">
+      <DependentUpon>InsertKH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertKH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertNV.Designer.vb">
+      <DependentUpon>InsertNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load.vb" />
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ThongTinKH.Designer.vb">
+      <DependentUpon>ThongTinKH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinKH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinNV.Designer.vb">
+      <DependentUpon>ThongTinNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CapNhat.resx">
+      <DependentUpon>CapNhat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapNhatKH.resx">
+      <DependentUpon>CapNhatKH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong.resx">
+      <DependentUpon>HeThong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertKH.resx">
+      <DependentUpon>InsertKH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertNV.resx">
+      <DependentUpon>InsertNV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinKH.resx">
+      <DependentUpon>ThongTinKH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinNV.resx">
+      <DependentUpon>ThongTinNV.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nam.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.add.to.cart.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about-xxl.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_user_profile_account_logout_people_man_human-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doanh-nhan_kkpe.png.ashx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ngay-xuan-ban-viec-lam-giau-cua-doanh-nhan-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Year of the monkey 2016 calendar vector illustration %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
